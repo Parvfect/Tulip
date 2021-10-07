@@ -1,3 +1,11 @@
+"""
+So the plan is to autorun this script at scheduled times / once a day and or command
+Analyse the text to see how I am doing overall and how I am feeling
+An added plus would be doing my acwr through talking to my computer
+This is interesting
+"""
+
+
 from __future__ import division
 
 import re
