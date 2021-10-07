@@ -199,8 +199,16 @@ def synthesize_text(text):
     
     playsound("output.mp3")
     
+
 """ Helper Methods """
 
+
+def save_to_file(processed_text):
+    """Saves the text to a file"""
+    with open("output.txt", "w") as out:
+        out.write(processed_text)
+        out.close()
+        
 def toggle_mic():
     """ Toggles the microphone on and off """
 

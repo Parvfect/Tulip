@@ -238,7 +238,11 @@ def toggle_mic():
     """ Toggles the microphone on and off """
 
     # Presses Ctrl + -
-    keyboard.press_and_release('ctrl+-')
+    keyboard = Controller()
+    keyboard.press(Key.alt_l)
+    keyboard.press(';')
+    keyboard.release(Key.alt_l)
+    keyboard.release(';')
 
 def set_environment_variables(key_path):
     """ Sets the environment variables for gcloud authentication"""
